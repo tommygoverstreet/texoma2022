@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+:root: {
+  --dark-bg: #000000;
+  --light-bg: #fff;
+  --primary-color: darkcyan;
+  --football-img: url("football-bg.jpeg");
+  --main-width: 100vw;
+  --main-height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+  color: #f6eae6;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  background: #3c4541 20%;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-areas: "a b c";
+  grid-column: start;
+}
+
+form {
+  background: #373538;
+  color: #345b47;
+  width: 100%;
+  grid-area: b;
+  grid-row: 2;
+  padding: 2% 0 5% 10%;
+  border-radius: 20px;
+}
+
+fieldset,
+input,
+select,
+label,
+option,
+textarea,
+button,
+p {
+  font-size: 17px;
+  font-weight: 750;
+  padding: 4px 4px;
+  height: auto;
+  border-radius: 10px;
+  color: #345b47;
+}
+
+fieldset {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-between;
+  border-radius: 10px;
+  border: 2px solid transparent;
+}
+
+p {
+  color: #f6eae6;
+}
+
+input {
+}
+
+select {
+}
+
+label {
+  color: #f6eae6;
+}
+
+option {
+  color: #345b47;
+}
+
+textarea {
+  width: 100%;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 10px;
+}
+
+button:hover {
+}
+
+/*----ID TAGS-------------------------*/
+#main {
+  width: 100vw;
+  height: auto;
+  background-color: #3c4541;
+  grid-area: b;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 4fr;
+  grid-template-areas:
+    "a b c"
+    "a b c";
+  grid-column: start;
+  padding: 2% 0 15% 10%;
+}
+
+#header {
+  grid-column: span 3;
+  grid-area: b;
+  grid-row: 1;
+}
+
+#description {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#title {
+  text-align: center;
+  font-size: 3em;
+}
+
+#textarea-label,
+#comments,
+#submit,
+#checkbox-label,
+#checkbox,
+#radio,
+#radio-label,
+#radio-btn {
+  grid-column: span 2;
+}
+
+/*----CONTAINERS----------*/

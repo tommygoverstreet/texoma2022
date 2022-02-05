@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet"
+              href="survey-style.css" />
+    </head>
+
+    <body>
+
+
+        <!-----MAIN CONTAINER-------->
+        <div id="main"
+             class="container">
+
+            <header id="header"
+                    class="header">
+                <h1 id="title">Football Survey Form</h1>
+                <p id="description">Football Signup Form</p>
+            </header>
+
+            <!----  FORM----------------------------->
+            <form action="GET"
+                  autocomplete="on"
+                  id="survey-form">
+
+                <div id="form-group">
+                    <fieldset>
+                        <!-----FORM DATE-------->
+                        <label id="date"
+                               for="date"
+                               class="label">Date</label>
+                        <input type="date"
+                               id="input-date"
+                               name="date"
+                               class="input"
+                               placeholder="today()"
+                               required>
+                    </fieldset>
+
+
+
+                    <!-----FORM NAME------------------------>
+                    <fieldset>
+                        <label id="name-label"
+                               for="name"
+                               class="label">Name</label>
+                        <input type="text"
+                               id="name"
+                               name="name"
+                               class="input"
+                               placeholder="Enter your name..."
+                               required>
+                    </fieldset>
+
+
+                    <!-----FORM EMAIL--------------------->
+                    <fieldset>
+                        <label id="email-label"
+                               for="email"
+                               class="label">Email</label>
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               class="input"
+                               placeholder="someone@gmail.com"
+                               required>
+                    </fieldset>
+
+
+                    <!-----FORM NUMBER--------------------->
+                    <fieldset>
+                        <label id="number-label"
+                               for="number"
+                               class="label">Jersey#</label>
+                        <input type="number"
+                               id="number"
+                               name="number"
+                               class="input"
+                               min="1"
+                               max="99"
+                               placeholder="Your Jersey # (1-99 only)">
+                    </fieldset>
+
+
+                    <!-----FORM DROPDOWN------------------>
+                    <fieldset>
+                        <label id="dropdown-label"
+                               for="dropdown"
+                               class="label">Jersey Size.</label>
+                        <select type="dropdown"
+                                id="dropdown"
+                                name="size"
+                                class="input"
+                                placeholder="med"
+                                required>
+                            <option id="drop-choice1"
+                                    type="option"
+                                    name="dropdown"
+                                    value="large"
+                                    class="drop-choice">Large</option>
+                            <option id="drop-choice2"
+                                    type="option"
+                                    name="dropdown"
+                                    value="large"
+                                    class="input">Medium</option>
+                            <option id="drop-choice3"
+                                    type="option"
+                                    name="dropdown"
+                                    value="large"
+                                    class="input">Small</option>
+
+
+                        </select>
+                    </fieldset>
+
+                    <!-----FORM RADIO BUTTONS------------------>
+                    <fieldset>
+                        <p id="radio-btn"
+                           class="label">What do you usually play?</p><br>
+
+                        <label id="radio label"><input type="radio"
+                                   id="radio"
+                                   name="radio"
+                                   value="defense"
+                                   class="btn-radio">Defense
+                        </label><br>
+
+                        <label id="radio label"><input type="radio"
+                                   id="radio"
+                                   name="radio"
+                                   value="offense"
+                                   class="btn-radio">Offense
+                        </label><br>
+
+                        <label id="radio label"><input type="radio"
+                                   id="radio"
+                                   name="radio"
+                                   value="specialTeams"
+                                   class="btn-radio">Special Teams</label><br>
+
+                        <label id="radio label"><input type="radio"
+                                   id="radio"
+                                   name="radio"
+                                   value="neverPlayed"
+                                   class="btn-radio">Never played</label><br>
+                    </fieldset>
+
+
+                    <!-----FORM CHECKBOXES--------------------------->
+                    <fieldset>
+                        <label id="checkbox-label"
+                               class="label">What position do you play?</label><br>
+
+                        <div id="checkbox-container">
+                            <input type="checkbox"
+                                   id="checkbox"
+                                   name="checkbox"
+                                   value="Quarterback"
+                                   class="position">Quarterback
+                            <br>
+                            <input type="checkbox"
+                                   id="checkbox"
+                                   name="checkbox"
+                                   value="runningBack"
+                                   class="position">Running Back
+                            <br>
+                            <input type="checkbox"
+                                   id="checkbox"
+                                   name="checkbox"
+                                   value="tightEnd"
+                                   class="position">Tight-End<br>
+                            <input type="checkbox"
+                                   id="checkbox"
+                                   name="checkbox"
+                                   value="tackle"
+                                   class="position">Tackle<br>
+                            <input type="checkbox"
+                                   id="checkbox"
+                                   name="checkbox"
+                                   value="guard"
+                                   class="position">Guard<br>
+                            <input type="checkbox"
+                                   id="checkbox"
+                                   name="checkbox"
+                                   value="center"
+                                   class="position">Center<br>
+                            <input type="checkbox"
+                                   id="checkbox"
+                                   name="checkbox"
+                                   value="other"
+                                   class="position">Other
+                            <br>
+                    </fieldset>
+
+
+                    <!-----FORM TEXTAREA------------------------------>
+                    <fieldset>
+                        <label id="textarea-label"
+                               for="comments"
+                               class="label">Add any special instructions.</label> <br>
+                        <textarea id="comments"
+                                  name="#"
+                                  rows="5"
+                                  cols="5"
+                                  placeholder="Special instructions">Add any special instructions
+                                </textarea>
+                    </fieldset>
+
+                    <!------FORM SUBMIT BUTTON---------------------->
+                    <fieldset>
+                        <button id="submit"
+                                type="submit"
+                                class="btn-submit"
+                                onclick="#">Submit
+                        </button>
+                    </fieldset>
+                </div>
+            </form>
+
+        </div>
+
+        </div>
+        <script type="text/javascript"
+                src="survey-test.js"></script>
+    </body>
+
+</html>
